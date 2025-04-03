@@ -7,7 +7,7 @@ export default function WithdrawScreen() {
 
   useEffect(() => {
     const getData = async () => {
-      const result = await fetchData('your-endpoint'); // Replace 'your-endpoint' with your actual endpoint
+      const result = await fetchData('withdraw-data'); // Endpoint on your backend server
       setData(result);
     };
 

@@ -1,7 +1,7 @@
 {
-  "name": "mybithash-frontend",
+  "name": "dssgreenhash-frontend",
   "version": "1.0.0",
-  "description": "Frontend for MyBitHash app",
+  "description": "Frontend for DSS GreenHash app",
   "main": "App.js",
   "scripts": {
     "start": "expo start",

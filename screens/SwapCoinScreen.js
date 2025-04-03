@@ -1,10 +1,23 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
+import { fetchData } from '../utils/api'; // Adjust the import path as necessary
 
 export default function SwapCoinScreen() {
+  const [data, setData] = useState(null);
+
+  useEffect(() => {
+    const getData = async () => {
+      const result = await fetchData('your-endpoint'); // Replace 'your-endpoint' with your actual endpoint
+      setData(result);
+    };
+
+    getData();
+  }, []);
+
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Swap Coin Screen</Text>
+      {data && <Text>{JSON.stringify(data)}</Text>}
     </View>
   );
 }

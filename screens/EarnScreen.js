@@ -7,7 +7,7 @@ export default function EarnScreen() {
 
   useEffect(() => {
     const getData = async () => {
-      const result = await fetchData('your-endpoint'); // Replace 'your-endpoint' with your actual endpoint
+      const result = await fetchData('earn-data'); // Endpoint on your backend server
       setData(result);
     };
 
